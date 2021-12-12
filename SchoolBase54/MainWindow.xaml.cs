@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace SchoolBase54
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        public void beginClick(object sender, EventArgs e)
+        {
+            ApplicationContext db = new ApplicationContext();
+            string conn = "Server=vovas0rc.beget.tech;Database=vovas0rc_sbase54;Uid=vovas0rc_sbase54;Pwd=54School54;";
+            MySqlConnection connection = new MySqlConnection(conn);
+            connection.Open();
+            /*foreach(Schoolar sch in db.schoolars)
+            {
+                MessageBox.Show($"{sch.name} {sch.surname}");
+            }*/
+            MessageBox.Show("uspex");
+            connection.Close();
         }
     }
 }
