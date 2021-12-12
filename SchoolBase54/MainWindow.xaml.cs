@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,16 +30,23 @@ namespace SchoolBase54
 
         public void beginClick(object sender, EventArgs e)
         {
-            ApplicationContext db = new ApplicationContext();
-            string conn = "Server=vovas0rc.beget.tech;Database=vovas0rc_sbase54;Uid=vovas0rc_sbase54;Pwd=54School54;";
-            MySqlConnection connection = new MySqlConnection(conn);
-            connection.Open();
-            /*foreach(Schoolar sch in db.schoolars)
+            DB db = new DB();
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM `schoolars`", db.getConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            adapter.SelectCommand = cmd;
+            adapter.Fill(table);
+            foreach(DataRow dr in table.Rows)
             {
-                MessageBox.Show($"{sch.name} {sch.surname}");
-            }*/
-            MessageBox.Show("uspex");
-            connection.Close();
+                string[] datas = new string[4];
+                int i = 0;
+                var cells = dr.ItemArray;
+                foreach (object cell in cells)
+                {
+                    datas[i++] = cell.ToString();
+                }
+                MessageBox.Show($"{datas[0]} {datas[1]} {datas[2]} {datas[3]}");
+            }
         }
     }
 }
