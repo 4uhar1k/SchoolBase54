@@ -23,5 +23,19 @@ namespace SchoolBase54
         {
             InitializeComponent();
         }
+
+        public void MainMenu (object sender, EventArgs e)
+        {
+            this.Hide();
+            MainWindow ma = new MainWindow();
+            ma.Show();
+        }
+
+        public void AddFamilyMember(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFamilyMember a = new AddFamilyMember();
+            a.Show();
+        }
     }
 }
