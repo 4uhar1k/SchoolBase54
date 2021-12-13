@@ -27,6 +27,12 @@ namespace SchoolBase54
             InitializeComponent();
         }
 
+        public void AddStudent(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddStudent st = new AddStudent();
+            st.Show();
+        }
         public void beginClick(object sender, EventArgs e)
         {
             DB db = new DB();
