@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddFamilyMember" Height="450" Width="800">
+        Title="AddFamilyMember" Height="1080" Width="1920">
     <Grid>
         <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+
+        <Button Height="50" Width = " 120" FontSize="20" Click="ReadyFamMember" Margin="257,362,423,22">Добавить</Button>
+       
+
+        <ComboBox Name="ChooseFamMember" Width="180" Height="30" FontFamily="Century Gothic" FontSize="17" Margin="-420,-320,0,0">
+            <ComboBoxItem Content="Мать" IsSelected="True"/>
+            <ComboBoxItem Content="Отец"/>
+            <ComboBoxItem Content="Брат/Сестра"/>
+        </ComboBox>
     </Grid>
 </Window>

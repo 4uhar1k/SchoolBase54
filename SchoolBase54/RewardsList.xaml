@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="RewardsList" Height="450" Width="800">
+        Title="RewardsList" Height="1080" Width="1920">
     <Grid>
         <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="50" Width="200" FontSize="16" Click="AddReward" Margin="51,342,549,42">Добавить награду</Button>
     </Grid>
 </Window>

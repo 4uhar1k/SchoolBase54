@@ -1,13 +1,14 @@
-﻿<Window x:Class="SchoolBase54.AddSchoolHistory"
+﻿<Window x:Class="SchoolBase54.AddTeacher"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddSchoolHistory" Height="1080" Width="1920">
+        Title="AddTeacher" Height="1080" Width="1920">
     <Grid>
         <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
-        <Button Height="50" Width =" 120" FontSize="20" Click="ReadySchoolHistory" Margin="257,362,423,22">Добавить</Button>
+
+        <Button Height="50" Width =" 120" FontSize="20" Click="ReadyTeacher" Margin="257,362,423,22">Добавить</Button>
     </Grid>
 </Window>
