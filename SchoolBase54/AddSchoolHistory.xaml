@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="AddSchoolHistory" Height="450" Width="800">
     <Grid>
-        
+        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
     </Grid>
 </Window>
