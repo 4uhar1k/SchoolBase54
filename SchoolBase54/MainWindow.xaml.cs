@@ -25,7 +25,6 @@ namespace SchoolBase54
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         public void beginClick(object sender, EventArgs e)
