@@ -8,6 +8,6 @@
         Title="AddReward" Height="1080" Width="1920">
     <Grid>
         <Button Height="50" Width =" 120" FontSize="20" Click="ReadyReward" Margin="257,362,423,22">Добавить</Button>
-        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1481,59,119,885">Главное меню</Button>
     </Grid>
 </Window>

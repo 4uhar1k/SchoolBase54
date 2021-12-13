@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddStudent" Height="1080" Width="1920">
     <Grid>
-        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="1504,50,296,964">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1504,-900,0,0">Главное меню</Button>
         <Button Height="50" Width =" 120" FontSize="20" Click="ReadyStudent" Margin="257,362,423,22">Добавить</Button>
 
         <Button Height="50" Width = " 150" FontSize="20" Click="FamHistoryOpen" Margin="700,240,0,0">Cемья</Button>

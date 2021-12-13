@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="SchoolHistory" Height="1080" Width="1920">
     <Grid>
-        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
 
-        <Button Height="50" Width="200" FontSize="16" Click="AddSchoolHistory" Margin="51,342,549,42">Добавить историю школы</Button>
+        <Button Height="120" Width="600" FontSize="46" Click="AddSchoolHistory" Margin="51,342,549,42">Добавить историю школы</Button>
     </Grid>
 </Window>

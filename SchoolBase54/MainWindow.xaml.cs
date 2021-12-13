@@ -48,5 +48,7 @@ namespace SchoolBase54
                 MessageBox.Show($"{datas[0]} {datas[1]} {datas[2]} {datas[3]}");
             }
         }
+
+       
     }
 }

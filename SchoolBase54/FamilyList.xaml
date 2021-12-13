@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="FamilyList" Height="1080" Width="1920">
     <Grid>
-        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
 
-        <Button Height="50" Width="170" FontSize="16" Click="AddFamilyMember" Margin="-500,314,0,0">Добавть члена семьи</Button>
+        <Button Height="120" Width="600" FontSize="46" Click="AddFamilyMember" Margin="-500,314,0,0">Добавть члена семьи</Button>
     </Grid>
 </Window>

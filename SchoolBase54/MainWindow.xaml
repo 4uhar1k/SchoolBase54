@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920">
     <Grid>
-        <Button Width="150" Height="100" FontSize="40" Click="beginClick">Let's go</Button>
+
+
+
+        <Button Width="450" Height="100" FontSize="40" Click="AddStudent">Добавить ученика</Button>
+        <Button Width="450" Height="100" Margin="0,300,0,0" FontSize="40" Click="AddWorker">Добавить сотрудника</Button>
     </Grid>
 </Window>

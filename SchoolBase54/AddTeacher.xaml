@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="AddTeacher" Height="1080" Width="1920">
     <Grid>
-        <Button Height="50" Width="120" FontSize="16" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
 
-        <Button Height="50" Width =" 120" FontSize="20" Click="ReadyTeacher" Margin="257,362,423,22">Добавить</Button>
+        <Button Height="120" Width ="400" FontSize="46" Click="ReadyTeacher" Margin="257,362,423,22">Добавить</Button>
     </Grid>
 </Window>
