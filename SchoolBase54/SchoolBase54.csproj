@@ -112,19 +112,61 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddReward.xaml.cs">
+      <DependentUpon>AddReward.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddSchoolHistory.xaml.cs">
+      <DependentUpon>AddSchoolHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RewardsList.xaml.cs">
+      <DependentUpon>RewardsList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolHistory.xaml.cs">
+      <DependentUpon>SchoolHistory.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddFamilyMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddReward.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddSchoolHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FamilyList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AddFamilyMember.xaml.cs">
+      <DependentUpon>AddFamilyMember.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="FamilyList.xaml.cs">
+      <DependentUpon>FamilyList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RewardsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SchoolHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
