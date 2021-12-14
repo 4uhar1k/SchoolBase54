@@ -9,7 +9,8 @@
     <Grid>
         <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1504,-900,0,0">Главное меню</Button>
         <Button Height="50" Width =" 120" FontSize="20" Click ="ReadyClick" Margin="257,362,423,22">Добавить</Button>
-
+        <Button Height="50" Width = "150" FontSize="20" Click="ImageClick" Margin="700,360,0,0">Добавить фото</Button>
+        <Label Name="imagepath" Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="1300,690,0,0" FontSize="25"></Label>
         <Button Height="50" Width = "150" FontSize="20" Margin="700,240,0,0">Cемья</Button>
         <Button Height="50" Width = "150" FontSize="20" Margin="700,120,0,0">Награды</Button>
         <Button Height="50" Width = "150" FontSize="20" Margin="700,0,0,0">История школ</Button>
