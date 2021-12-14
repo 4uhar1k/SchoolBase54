@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
     <Grid>
-
-
-
         <Button Width="450" Height="100" FontSize="40" Click="AddStudent">Добавить ученика</Button>
         <Button Width="450" Height="100" Margin="0,300,0,0" Click="AddTeacher" FontSize="40">Добавить сотрудника</Button>
+        <Button Width="450" Height="100" Margin="0,600,0,0" Click="bebra" FontSize="40">lolita</Button>
+        <Image Name="image1" HorizontalAlignment="Left" Height="400" Width="400" Margin="316,232,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

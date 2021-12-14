@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +27,7 @@ namespace SchoolBase54
         public MainWindow()
         {
             InitializeComponent();
+            
         }
         
         public void AddStudent(object sender, EventArgs e)
@@ -40,27 +43,53 @@ namespace SchoolBase54
             AddTeacher st = new AddTeacher();
             st.Show();
         }
-        public void beginClick(object sender, EventArgs e)
+
+        public void bebra(object sender, EventArgs e)
         {
             DB db = new DB();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM `schoolars`", db.getConnection());
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `schoolars` WHERE `iin` = 051012500555", db.getConnection());
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+
+
             DataTable table = new DataTable();
-            adapter.SelectCommand = cmd;
+
             adapter.Fill(table);
-            foreach(DataRow dr in table.Rows)
+            db.openConnection();
+            MySqlDataReader rdr1 = command.ExecuteReader();
+            while (rdr1.Read())
             {
-                string[] datas = new string[4];
-                int i = 0;
-                var cells = dr.ItemArray;
-                foreach (object cell in cells)
+                byte[] data = (byte[])table.Rows[0][5]; // 0 is okay if you only selecting one column
+                                                 //And use:
+                using (System.IO.MemoryStream ms = new System.IO.MemoryStream(data))
                 {
-                    datas[i++] = cell.ToString();
+                    var imageSource = new BitmapImage();
+                    imageSource.BeginInit();
+                    imageSource.StreamSource = ms;
+                    imageSource.CacheOption = BitmapCacheOption.OnLoad;
+                    imageSource.EndInit();
+
+                    // Assign the Source property of your image
+                    image1.Source = imageSource;
                 }
-                MessageBox.Show($"{datas[0]} {datas[1]} {datas[2]} {datas[3]}");
             }
+            db.closeConnection();
+            /*string s = (string)table.Rows[0][3];
+            byte[] img = System.Text.Encoding.ASCII.GetBytes(s);
+
+
+            //MemoryStream ms = new MemoryStream(img);
+
+            using (MemoryStream stream = new MemoryStream(img))
+            {
+                image1.Source = BitmapFrame.Create(stream,
+                                                  BitmapCreateOptions.None,
+                                                  BitmapCacheOption.OnLoad);
+            }*/
+
+            adapter.Dispose();
         }
 
-       
     }
 }
