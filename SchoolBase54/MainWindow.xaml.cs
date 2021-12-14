@@ -26,11 +26,18 @@ namespace SchoolBase54
         {
             InitializeComponent();
         }
-
+        
         public void AddStudent(object sender, EventArgs e)
         {
             this.Hide();
             AddStudent st = new AddStudent();
+            st.Show();
+        }
+
+        public void AddTeacher(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddTeacher st = new AddTeacher();
             st.Show();
         }
         public void beginClick(object sender, EventArgs e)

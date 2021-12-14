@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddFamilyMember" Height="1080" Width="1920">
+        Title="AddFamilyMember" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
     <Grid>
         <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1507,44,93,900">Главное меню</Button>
 

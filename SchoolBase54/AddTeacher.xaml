@@ -5,10 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddTeacher" Height="1080" Width="1920">
+        Title="AddTeacher" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
     <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1504,-900,0,0">Главное меню</Button>
+        <Button Height="50" Width =" 120" FontSize="20" Click ="ReadyClick" Margin="257,362,423,22">Добавить</Button>
 
-        <Button Height="120" Width ="400" FontSize="46" Margin="257,362,423,22">Добавить</Button>
+        <Button Height="50" Width = "150" FontSize="20" Margin="700,240,0,0">Cемья</Button>
+        <Button Height="50" Width = "150" FontSize="20" Margin="700,120,0,0">Награды</Button>
+        <Button Height="50" Width = "150" FontSize="20" Margin="700,0,0,0">История школ</Button>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,20,0,0" FontSize="25">Фамилия</Label>
+        <TextBox Name="SurnameTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-860,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,120,0,0" FontSize="25">Имя</Label>
+        <TextBox Name="NameTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-680,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,220,0,0" FontSize="25">Отчество</Label>
+        <TextBox Name="OtceTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-480,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,320,0,0" FontSize="25">ИИН</Label>
+        <TextBox Name="IINTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-280,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,420,0,0" FontSize="25">Категория преподавателя</Label>
+        <TextBox Name="CategoryTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-80,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,520,0,0" FontSize="25">Номер дела</Label>
+        <TextBox Name="CodeTextBox" Width="500" FontSize="23" Height="40" Margin="-110,120,0,0"></TextBox>
     </Grid>
 </Window>

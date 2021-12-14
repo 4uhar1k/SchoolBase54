@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="SchoolHistory" Height="1080" Width="1920">
+        Title="SchoolHistory" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
     <Grid>
         <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
 

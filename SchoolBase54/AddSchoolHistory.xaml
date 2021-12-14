@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddSchoolHistory" Height="1080" Width="1920">
+        Title="AddSchoolHistory" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
     <Grid>
         <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1426,83,174,861">Главное меню</Button>
         <Button Height="50" Width =" 120" FontSize="20" Margin="257,362,423,22">Добавить</Button>
