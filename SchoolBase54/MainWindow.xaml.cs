@@ -48,7 +48,7 @@ namespace SchoolBase54
         {
             DB db = new DB();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `schoolars` WHERE `iin` = 051012500555", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `schoolars` WHERE `iin` = 12", db.getConnection());
 
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
 

@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddStudent" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
-    <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1504,-900,0,0">Главное меню</Button>
-        <Button Height="50" Width =" 120" FontSize="20" Click ="ReadyClick" Margin="257,362,423,22">Добавить</Button>
+        Title="AddStudent" Height="1080" Width="1920" WindowStartupLocation="CenterOwner"  WindowState="Maximized">
+    <Grid Margin="0,0,0,-16">
+        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="50" Width =" 120" FontSize="20" Click ="ReadyClick" Margin="257,762,423,22">Добавить</Button>
 
         <Button Height="50" Width = "150" FontSize="20" Click="ImageClick" Margin="700,360,0,0">Добавить фото</Button>
         <Label Name="imagepath" Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="1300,690,0,0" FontSize="25"></Label>

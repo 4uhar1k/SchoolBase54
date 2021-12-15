@@ -22,9 +22,13 @@ namespace SchoolBase54
     /// </summary>
     public partial class AddStudent : Window
     {
+
         public AddStudent()
         {
             InitializeComponent();
+           
+            
+
         }
         public void MainMenu(object sender, EventArgs e)
         {
