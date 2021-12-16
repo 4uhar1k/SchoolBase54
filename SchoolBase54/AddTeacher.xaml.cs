@@ -46,6 +46,7 @@ namespace SchoolBase54
 
                 string path = openFileDialog1.FileName;
                 imagepath.Content = path;
+                imagepreview.Source = new BitmapImage(new Uri(path));
                 //...
             }
         }

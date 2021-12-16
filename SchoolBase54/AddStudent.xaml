@@ -5,31 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddStudent" Height="1080" Width="1920" WindowStartupLocation="CenterOwner"  WindowState="Maximized">
+        Title="AddStudent" Height="880" Width="1420" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
-        <Button Height="50" Width =" 120" FontSize="20" Click ="ReadyClick" Margin="257,662,423,22">Добавить</Button>
-
-        <Button Height="50" Width = "150" FontSize="20" Click="ImageClick" Margin="700,360,0,0">Добавить фото</Button>
-        <Label Name="imagepath" Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="1300,690,0,0" FontSize="25"></Label>
+        <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click ="ReadyClick" Margin="57,732,0,0">Добавить ученика</Button>
+        <Border BorderThickness="15" BorderBrush="Chocolate" Height="450" Width="450" Margin="400,-200,0,0">
+            <Image Name="imagepreview" Height="420" Width="420" Margin="0,0,0,0" ></Image>
+        </Border>
+        
+        <Button Height="50" Width = "150" FontSize="20" Click="ImageClick" Margin="400,360,0,0">Добавить фото</Button>
+        <Label Name="imagepath" Width="600" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="600,660,0,0" FontSize="15"></Label>
         
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,20,0,0" FontSize="25">Фамилия</Label>
-        <TextBox Name="SurnameTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-630,0,0"></TextBox>
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,20,0,0" FontSize="25">Фамилия</Label>
+        <TextBox Name="SurnameTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-680,0,0"></TextBox>
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,120,0,0" FontSize="25">Имя</Label>
-        <TextBox Name="NameTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-430,0,0"></TextBox>
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,120,0,0" FontSize="25">Имя</Label>
+        <TextBox Name="NameTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,220,0,0" FontSize="25">Отчество</Label>
-        <TextBox Name="OtceTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-230,0,0"></TextBox>
+        <Label Width="400" Height="40" FontFamily="Century Gothic" Margin="-810,-380,0,0" FontSize="25">Отчество</Label>
+        <TextBox Name="OtceTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-280,0,0"></TextBox>
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,320,0,0" FontSize="25">ИИН</Label>
-        <TextBox Name="IINTextBox" Width="500" FontSize="23" Height="40" Margin="-110,-30,0,0"></TextBox>
+        <Label Width="400" Height="40" FontFamily="Century Gothic" Margin="-810,-170,0,0" FontSize="25">ИИН</Label>
+        <TextBox Name="IINTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-70,0,0"></TextBox>
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,420,0,0" FontSize="25">Класс</Label>
-        <TextBox Name="GradeTextBox" Width="500" FontSize="23" Height="40" Margin="-110,170,0,0"></TextBox>
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,430,0,0" FontSize="25">Класс</Label>
+        <TextBox Name="GradeTextBox" Width="500" FontSize="23" Height="40" Margin="-710,130,0,0"></TextBox>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,272,0,0">Добавить информацию о родне</Button>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,422,0,0">Добавить историю школ</Button>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,572,0,0">Добавить достижения</Button>
 
-        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-210,520,0,0" FontSize="25">Номер дела</Label>
-        <TextBox Name="CodeTextBox" Width="500" FontSize="23" Height="40" Margin="-110,370,0,0"></TextBox>
     </Grid>
 </Window>
