@@ -5,14 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="AddFamilyMember" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
+        Title="AddFamilyMember" WindowStartupLocation="CenterScreen" Height="840" Width="1420">
     <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1507,44,93,900">Главное меню</Button>
+        <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click ="ReadyFamilyMember" Margin="57,732,0,0">Добавить родственника</Button>
+        
 
-        <Button Height="120" Width = " 400" FontSize="46" Margin="257,362,423,22">Добавить</Button>
-       
 
-        <ComboBox Name="ChooseFamMember" Width="400" Height="80" FontFamily="Century Gothic" FontSize="46" Margin="-420,-320,0,0">
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,10,0,0" FontSize="25">Фамилия</Label>
+        <TextBox Name="SurnameRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-680,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,110,0,0" FontSize="25">Имя</Label>
+        <TextBox Name="NameRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top"  Height="40" FontFamily="Century Gothic" Margin="-810,210,0,0" FontSize="25">Отчество</Label>
+        <TextBox Name="OtceRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-280,0,0"></TextBox>
+
+        <Label Width="400" Height="40" VerticalAlignment="Top"  FontFamily="Century Gothic" Margin="-810,310,0,0" FontSize="25">ИИН</Label>
+        <TextBox Name="IINRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-80,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,410,0,0" FontSize="25">Возраст</Label>
+        <TextBox Name="AgeRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,120,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,510,0,0" FontSize="25">Место работы/учёбы</Label>
+        <TextBox Name="WorkPlaceRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,320,0,0"></TextBox>
+
+
+        <ComboBox Name="ChooseFamMember" Width="290" Height="50" FontFamily="Century Gothic" FontSize="30" Margin="-910,520,0,0">
             <ComboBoxItem Content="Мать" IsSelected="True"/>
             <ComboBoxItem Content="Отец"/>
             <ComboBoxItem Content="Брат/Сестра"/>

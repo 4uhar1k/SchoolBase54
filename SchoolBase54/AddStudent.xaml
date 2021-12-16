@@ -31,9 +31,9 @@
 
         <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,430,0,0" FontSize="25">Класс</Label>
         <TextBox Name="GradeTextBox" Width="500" FontSize="23" Height="40" Margin="-710,130,0,0"></TextBox>
-        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,272,0,0">Добавить информацию о родне</Button>
-        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,422,0,0">Добавить историю школ</Button>
-        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,572,0,0">Добавить достижения</Button>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,272,0,0">Информацию о родне</Button>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,422,0,0">Историю школ</Button>
+        <Button Height="40" Width ="500" FontSize="27" Click ="ReadyClick" Margin="-710,572,0,0">Достижения</Button>
 
     </Grid>
 </Window>

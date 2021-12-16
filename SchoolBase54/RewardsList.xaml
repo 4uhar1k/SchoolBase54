@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="RewardsList" WindowStartupLocation="CenterOwner"  Height="1080" Width="1920">
+        Title="RewardsList" WindowStartupLocation="CenterScreen"  Height="880" Width="1420">
     <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="1260,72,340,872">Главное меню</Button>
-        <Button Height="120" Width="620" FontSize="46" Click="AddReward" Margin="51,342,549,42">Добавить награду</Button>
+        <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click ="AddReward" Margin="57,732,0,0">Добавить историю школ</Button>
+        <Label Content="Здесь будет выводиться уже добавленные награды + отсюда идет переход в AddReward.xaml" FontSize ="30  " HorizontalAlignment="Left" Margin="360,393,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

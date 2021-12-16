@@ -29,5 +29,7 @@ namespace SchoolBase54
             MainWindow ma = new MainWindow();
             ma.Show();
         }
+
+        
     }
 }

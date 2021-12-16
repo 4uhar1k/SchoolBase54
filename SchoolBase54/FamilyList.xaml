@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="FamilyList" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
+        Title="FamilyList" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
-        <Button Height="120" Width="320" FontSize="46" Click="MainMenu" Margin="579,35,101,349">Главное меню</Button>
-
-        <Button Height="120" Width="600" FontSize="46" Click="AddFamilyMember" Margin="-500,314,0,0">Добавть члена семьи</Button>
+        <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click ="AddFamilyMember" Margin="57,732,0,0">Добавить историю школ</Button>
+        <Label Content="Здесь будет выводиться уже созданные родственники данного ученика + отсюда идет переход в AddFamilyMember.xaml" FontSize ="23  " HorizontalAlignment="Left" Margin="72,391,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
