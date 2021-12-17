@@ -9,5 +9,11 @@
     <Grid>
         <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
         <Button Height="50" Width ="420" FontSize="35" Click ="ReadySchoolHistory" Margin="57,732,0,0">Добавить историю школ</Button>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,10,0,0" FontSize="25">Название школы</Label>
+        <TextBox Name="SurnameRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-680,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,110,0,0" FontSize="25">Классы обучения</Label>
+        <TextBox Name="NameRodTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
     </Grid>
 </Window>
