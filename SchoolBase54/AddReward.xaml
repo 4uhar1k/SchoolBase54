@@ -8,6 +8,25 @@
         Title="AddReward" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
         <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Border BorderThickness="15" BorderBrush="Chocolate" Height="450" Width="450" Margin="400,-200,0,0">
+            <Image Name="imagepreview" Height="420" Width="420" Margin="0,0,0,0" ></Image>
+        </Border>
+        <Button Height="50" Width = "150" FontSize="20" Click="ImageClick" Margin="400,360,0,0">Добавить фото награды</Button>
+        <Label Name="imagepath" Width="600" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="600,660,0,0" FontSize="25"></Label>
+
         <Button Height="50" Width ="420" FontSize="35" Click ="ReadyReward" Margin="57,732,0,0">Дoбавить награду</Button>
+
+        <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,10,0,0" FontSize="25">Название награды</Label>
+        <TextBox Name="RewardNameTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-680,0,0"></TextBox>
+
+        <Label Width="410" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,110,0,0" FontSize="25">Занятое место(0 если никакое)</Label>
+        <TextBox Name="PlaceRewardTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
+
+        <Label Width="400" VerticalAlignment="Top"  Height="40" FontFamily="Century Gothic" Margin="-810,210,0,0" FontSize="25">Год получения</Label>
+        <TextBox Name="YearRewardTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-280,0,0"></TextBox>
+
+        
+
+        
     </Grid>
 </Window>
