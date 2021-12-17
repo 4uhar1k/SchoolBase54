@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="RewardsList" WindowStartupLocation="CenterScreen"  Height="880" Width="1420">
     <Grid>
-        <Button Height="70" Width="350" FontSize="21" Click="AddMenu" Margin="1000,-600,0,0">Обратно в окно добавления</Button>
+        <Button Height="70" Width="400" FontSize="21" Click="AddMenu" Margin="950,-600,0,0">Обратно в окно добавления ученика</Button>
         <Button Height="50" Width ="420" FontSize="35" Click ="AddReward" Margin="57,732,0,0">Добавить историю школ</Button>
         <Label Content="Здесь будет выводиться уже добавленные награды + отсюда идет переход в AddReward.xaml" FontSize ="30  " HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Center"/>
     </Grid>
