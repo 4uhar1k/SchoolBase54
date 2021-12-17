@@ -8,6 +8,6 @@
         Title="AddReward" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
         <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
-        <Button Height="50" Width ="420" FontSize="35" Click ="ReadyReward" Margin="57,732,0,0">Добавить награду</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click ="ReadyReward" Margin="57,732,0,0">Дoбавить награду</Button>
     </Grid>
 </Window>
