@@ -8,7 +8,7 @@
         Title="SchoolHistory" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
 
-        <Button Height="70" Width="150" FontSize="21" Click="MainMenu" Margin="1200,-600,0,0">Главное меню</Button>
+        <Button Height="70" Width="350" FontSize="21" Click="AddMenu" Margin="1000,-600,0,0">Обратно в окно добавления</Button>
         <Button Height="50" Width ="420" FontSize="35" Click ="AddSchoolHistory" Margin="57,732,0,0">Добавить историю школ</Button>
         <Label Content="Здесь будет выводиться уже созданные истории школ данного ученика отсюда идет переход в AddSchoolHistory.xaml" FontSize ="23  " HorizontalAlignment="Left" Margin="77,330,0,0" VerticalAlignment="Top"/>
 
