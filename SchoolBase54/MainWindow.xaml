@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SchoolBase54"
         mc:Ignorable="d"
-        Title="MainWindow" WindowStartupLocation="CenterScreen" Height="1080" Width="1920">
+        Title="MainWindow" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
         <Button Width="450" Height="100" FontSize="40" Click="AddStudent">Добавить ученика</Button>
         <Button Width="450" Height="100" Margin="0,300,0,0" Click="AddTeacher" FontSize="40">Добавить сотрудника</Button>

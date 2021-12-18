@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +24,36 @@ namespace SchoolBase54
         {
             InitializeComponent();
         }
-
+        string window;
+        public AddReward(string window) : this()
+        {
+            this.window = window;
+        }
+        
         public void MainMenu(object sender, EventArgs e)
         {
             this.Hide();
-            RewardsList ma = new RewardsList();
+            RewardsList ma = new RewardsList(window);
             ma.Show();
+        }
+
+        public void ImageClick(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "Image files (*.png, *.jpg)|*.png;*.jpg";
+            openFileDialog1.FilterIndex = 0;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == true)
+            {
+
+                string path = openFileDialog1.FileName;
+                imagepath.Content = path;
+                imagepreview.Source = new BitmapImage(new Uri(path));
+                //...
+            }
         }
     }
 }

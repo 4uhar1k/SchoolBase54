@@ -8,7 +8,7 @@
         Title="RewardsList" WindowStartupLocation="CenterScreen"  Height="880" Width="1420">
     <Grid>
         <Button Height="70" Width="400" FontSize="21" Click="MainMenu" Margin="950,-600,0,0">Обратно в окно добавления</Button>
-        <Button Height="50" Width ="420" Click="AddReward" FontSize="35" Margin="57,732,0,0">Добавить историю школ</Button>
+        <Button Height="50" Width ="420" Click="AddReward" FontSize="35" Margin="57,732,0,0">Добавить достижения</Button>
         <Label Content="Здесь будет выводиться уже добавленные награды + отсюда идет переход в AddReward.xaml" FontSize ="30  " HorizontalAlignment="Left" Margin="67,0,0,0" VerticalAlignment="Center"/>
     </Grid>
 </Window>

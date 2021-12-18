@@ -49,7 +49,7 @@ namespace SchoolBase54
         public void AddSchoolHistory(object sender, EventArgs e)
         {
             this.Hide();
-            AddSchoolHistory a = new AddSchoolHistory();
+            AddSchoolHistory a = new AddSchoolHistory(window);
             a.Show();
         }
     }

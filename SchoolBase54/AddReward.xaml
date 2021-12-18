@@ -11,7 +11,7 @@
         <Border BorderThickness="15" BorderBrush="Chocolate" Height="450" Width="450" Margin="400,-200,0,0">
             <Image Name="imagepreview" Height="420" Width="420" Margin="0,0,0,0" ></Image>
         </Border>
-        <Button Height="50" Width = "150" FontSize="20" Margin="400,360,0,0">Добавить фото награды</Button>
+        <Button Height="50" Width = "150" FontSize="20" Margin="400,360,0,0" Click="ImageClick">Добавить фото награды</Button>
         <Label Name="imagepath" Width="600" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="600,660,0,0" FontSize="25"></Label>
 
         <Button Height="50" Width ="420" FontSize="35" Margin="57,732,0,0">Дoбавить награду</Button>

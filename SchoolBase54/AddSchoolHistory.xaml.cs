@@ -23,10 +23,16 @@ namespace SchoolBase54
         {
             InitializeComponent();
         }
+        string window;
+        public AddSchoolHistory(string window) : this()
+        {
+            this.window = window;
+        }
+        
         public void MainMenu(object sender, EventArgs e)
         {
             this.Hide();
-            SchoolHistory ma = new SchoolHistory();
+            SchoolHistory ma = new SchoolHistory(window);
             ma.Show();
         }
     }

@@ -51,7 +51,7 @@ namespace SchoolBase54
         public void AddReward(object sender, EventArgs e)
         {
             this.Hide();
-            AddReward a = new AddReward();
+            AddReward a = new AddReward(window);
             a.Show();
         }
     }
