@@ -26,7 +26,7 @@ namespace SchoolBase54
         public void MainMenu(object sender, EventArgs e)
         {
             this.Hide();
-            MainWindow ma = new MainWindow();
+            SchoolHistory ma = new SchoolHistory();
             ma.Show();
         }
     }

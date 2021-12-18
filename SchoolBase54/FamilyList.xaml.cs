@@ -27,7 +27,7 @@ namespace SchoolBase54
         public void MainMenu (object sender, EventArgs e)
         {
             this.Hide();
-            MainWindow ma = new MainWindow();
+            AddStudent ma = new AddStudent();
             ma.Show();
         }
 

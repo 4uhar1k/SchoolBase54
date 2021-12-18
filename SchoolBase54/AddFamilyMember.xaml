@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="AddFamilyMember" WindowStartupLocation="CenterScreen" Height="840" Width="1420">
     <Grid>
-        <Button Height="70" Width="350" FontSize="21" Click="FamilyMenu" Margin="1000,-600,0,0">В список родственников</Button>
-        <Button Height="50" Width ="420" FontSize="35" Click ="ReadyFamilyMember" Margin="57,732,0,0">Добавить родственника</Button>
+        <Button Height="70" Width="350" FontSize="21" Click="MainMenu" Margin="1000,-600,0,0">В список родственников</Button>
+        <Button Height="50" Width ="420" FontSize="35" Margin="57,732,0,0">Добавить родственника</Button>
         
 
 

@@ -32,6 +32,20 @@ namespace SchoolBase54
             MainWindow ma = new MainWindow();
             ma.Show();
         }
+
+        public void rewardlistClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            RewardsList fl = new RewardsList("teacher");
+            fl.Show();
+        }
+
+        public void schoollistClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            SchoolHistory fl = new SchoolHistory("teacher");
+            fl.Show();
+        }
         public void ImageClick(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="AddSchoolHistory" WindowStartupLocation="CenterScreen" Height="880" Width="1420">
     <Grid>
-        <Button Height="70" Width="350" FontSize="21" Click="SchoolHistoryMenu" Margin="1000,-600,0,0">В историю школ</Button>
-        <Button Height="50" Width ="420" FontSize="35" Click ="ReadySchoolHistory" Margin="57,732,0,0">Добавить историю школ</Button>
+        <Button Height="70" Width="350" FontSize="21" Click="MainMenu" Margin="1000,-600,0,0">В историю школ</Button>
+        <Button Height="50" Width ="420" FontSize="35" Margin="57,732,0,0">Добавить историю школ</Button>
         <ComboBox Name="SchoolTypeComboBox" Width="600" Height="50" FontFamily="Century Gothic" FontSize="30" Margin="-610,-320,0,0">
             <ComboBoxItem Content="Общеобразовательная" IsSelected="True"/>
             <ComboBoxItem Content="Гимназия"/>
