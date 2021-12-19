@@ -22,9 +22,21 @@ namespace SchoolBase54
     /// </summary>
     public partial class AddTeacher : Window
     {
+        List<string> rewardname = new List<string>();
+        List<string> rewardyear = new List<string>();
+        List<BitmapImage> rewardimage = new List<BitmapImage>();
         public AddTeacher()
         {
             InitializeComponent();
+        }
+        public AddTeacher(List<string> rewardname, List<string> rewardyear, List<BitmapImage> rewardimage) : this()
+        {
+            for (int i = 0; i < rewardname.Count; i++)
+            {
+                this.rewardname.Add(rewardname[i]);
+                this.rewardyear.Add(rewardyear[i]);
+                this.rewardimage.Add(rewardimage[i]);
+            }
         }
         public void MainMenu(object sender, EventArgs e)
         {
@@ -36,7 +48,7 @@ namespace SchoolBase54
         public void rewardlistClick(object sender, EventArgs e)
         {
             this.Hide();
-            RewardsList fl = new RewardsList("teacher");
+            RewardsList fl = new RewardsList("teacher", rewardname, rewardyear,rewardimage);
             fl.Show();
         }
 

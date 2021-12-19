@@ -23,6 +23,10 @@ namespace SchoolBase54
     public partial class AddStudent : Window
     {
 
+        List<string> rewardname = new List<string>();
+        List<string> rewardyear = new List<string>();
+        List<BitmapImage> rewardimage = new List<BitmapImage>();
+
         public AddStudent()
         {
             InitializeComponent();
@@ -30,6 +34,17 @@ namespace SchoolBase54
             
 
         }
+
+        public AddStudent(List<string> rewardname, List<string> rewardyear, List<BitmapImage> rewardimage) : this()
+        {
+            for (int i = 0; i < rewardname.Count; i++)
+            {
+                this.rewardname.Add(rewardname[i]);
+                this.rewardyear.Add(rewardyear[i]);
+                this.rewardimage.Add(rewardimage[i]);
+            }
+        }
+
         public void MainMenu(object sender, EventArgs e)
         {
             this.Hide();
@@ -47,7 +62,7 @@ namespace SchoolBase54
         public void rewardlistClick(object sender, EventArgs e)
         {
             this.Hide();
-            RewardsList fl = new RewardsList("schoolar");
+            RewardsList fl = new RewardsList("schoolar", rewardname, rewardyear, rewardimage);
             fl.Show();
         }
 
@@ -94,6 +109,8 @@ namespace SchoolBase54
             command.Parameters.Add("@uG", MySqlDbType.VarChar).Value = GradeTextBox.Text;
             command.Parameters.Add("@uI", MySqlDbType.VarChar).Value = IINTextBox.Text;
             command.Parameters.Add("@uP", MySqlDbType.Blob).Value = ImageData;
+
+            
             db.openConnection();
             if (command.ExecuteNonQuery() == 1)
             {
@@ -102,6 +119,31 @@ namespace SchoolBase54
             else
             {
                 MessageBox.Show("JlOX!");
+            }
+
+            for (int i = 0;i<rewardimage.Count;i++)
+            {
+                byte[] data;
+                JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(rewardimage[i]));
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    encoder.Save(ms);
+                    data = ms.ToArray();
+                    MySqlCommand command1 = new MySqlCommand("INSERT INTO `rewards` (`name`, `year`, `iin`, `image`) VALUES (@uN, @uS, @uF, @uI)", db.getConnection());
+                    command1.Parameters.Add("@uN", MySqlDbType.VarChar).Value = rewardname[i];
+                    command1.Parameters.Add("@uS", MySqlDbType.VarChar).Value = rewardyear[i];
+                    command1.Parameters.Add("@uF", MySqlDbType.VarChar).Value = IINTextBox.Text;
+                    command1.Parameters.Add("@uI", MySqlDbType.Blob).Value = data;
+                    if (command1.ExecuteNonQuery()==1)
+                    {
+
+                    }
+                    
+
+                    
+                }
+
             }
             db.closeConnection();
         }

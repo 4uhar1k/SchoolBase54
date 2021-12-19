@@ -25,17 +25,35 @@ namespace SchoolBase54
             InitializeComponent();
         }
         string window;
-        public AddReward(string window) : this()
+        List<string> rewardname = new List<string>();
+        List<string> rewardyear = new List<string>();
+        List<BitmapImage> rewardimage = new List<BitmapImage>();
+        public AddReward(string window, List<string> rewardname, List<string> rewardyear, List<BitmapImage> rewardimage) : this()
         {
             this.window = window;
+            for (int i = 0; i < rewardname.Count; i++)
+            {
+                this.rewardname.Add(rewardname[i]);
+                this.rewardyear.Add(rewardyear[i]);
+            }
         }
         
         public void MainMenu(object sender, EventArgs e)
         {
             this.Hide();
-            RewardsList ma = new RewardsList(window);
+            RewardsList ma = new RewardsList(window, rewardname, rewardyear, rewardimage);
             ma.Show();
         }
+
+        public void readyclick(object sender, EventArgs e)
+        {
+            rewardname.Add(RewardNameTextBox.Text);
+            rewardyear.Add(YearRewardTextBox.Text);
+            rewardimage.Add(new BitmapImage(new Uri(imagepath.Content.ToString())));
+            MessageBox.Show("Достижение добавлено успешно");
+            
+        }
+        
 
         public void ImageClick(object sender, EventArgs e)
         {

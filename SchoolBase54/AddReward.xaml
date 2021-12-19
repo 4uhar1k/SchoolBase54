@@ -14,16 +14,15 @@
         <Button Height="50" Width = "150" FontSize="20" Margin="400,360,0,0" Click="ImageClick">Добавить фото награды</Button>
         <Label Name="imagepath" Width="600" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="600,660,0,0" FontSize="25"></Label>
 
-        <Button Height="50" Width ="420" FontSize="35" Margin="57,732,0,0">Дoбавить награду</Button>
+        <Button Height="50" Width ="420" FontSize="35" Click="readyclick" Margin="57,732,0,0">Дoбавить награду</Button>
 
         <Label Width="400" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,10,0,0" FontSize="25">Название награды</Label>
         <TextBox Name="RewardNameTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-680,0,0"></TextBox>
 
-        <Label Width="410" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,110,0,0" FontSize="25">Занятое место(0 если никакое)</Label>
-        <TextBox Name="PlaceRewardTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
+        <Label Width="410" VerticalAlignment="Top" Height="40" FontFamily="Century Gothic" Margin="-810,110,0,0" FontSize="25">Год получения</Label>
+        <TextBox Name="YearRewardTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-480,0,0"></TextBox>
 
-        <Label Width="400" VerticalAlignment="Top"  Height="40" FontFamily="Century Gothic" Margin="-810,210,0,0" FontSize="25">Год получения</Label>
-        <TextBox Name="YearRewardTextBox" Width="500" FontSize="23" Height="40" Margin="-710,-280,0,0"></TextBox>
+        
 
         
 

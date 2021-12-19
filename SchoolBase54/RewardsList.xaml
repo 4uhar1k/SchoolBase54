@@ -9,62 +9,72 @@
     <Grid>
         <Button Height="70" Width="400" FontSize="21" Click="MainMenu" Margin="950,-600,0,0">Обратно в окно добавления</Button>
         <Button Height="50" Width ="420" Click="AddReward" FontSize="35" Margin="57,732,0,0">Добавить достижения</Button>
-        <TextBox Width="650" Height="100" Margin="-500,-600,0,0" FontSize="25"></TextBox>
-        <ScrollViewer Width="1200" Height="500" Margin="-200,100,0,0">
+        <TextBox Name="searchbar" Foreground="Gray" Text="Поиск по достижениям" GotFocus="isSelected" Width="650" Height="100" Margin="-500,-600,0,0" FontSize="25"></TextBox>
+        <ScrollViewer Width="1400" Height="500" Margin="0,100,0,0">
             <StackPanel>
                 
                 <StackPanel Height="100" Name="reward1">
-                    <Label Margin="-1100,0,0,0" Content="1" FontSize="45" Width="50"></Label>
-                    <Label Name="name1" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="1" FontSize="45" Width="50"></Label>
+                    <Label Name="name1" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year1" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward2">
-                    <Label Margin="-1100,0,0,0" Content="2" FontSize="45" Width="50"></Label>
-                    <Label Name="name2" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="2" FontSize="45" Width="50"></Label>
+                    <Label Name="name2" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year2" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward3">
-                    <Label Margin="-1100,0,0,0" Content="3" FontSize="45" Width="50"></Label>
-                    <Label Name="name3" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="3" FontSize="45" Width="50"></Label>
+                    <Label Name="name3" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year3" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward4">
-                    <Label Margin="-1100,0,0,0" Content="4" FontSize="45" Width="50"></Label>
-                    <Label Name="name4" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="4" FontSize="45" Width="50"></Label>
+                    <Label Name="name4" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year4" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward5">
-                    <Label Margin="-1100,0,0,0" Content="5" FontSize="45" Width="50"></Label>
-                    <Label Name="name5" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="5" FontSize="45" Width="50"></Label>
+                    <Label Name="name5" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year5" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward6">
-                    <Label Margin="-1100,0,0,0" Content="6" FontSize="45" Width="50"></Label>
-                    <Label Name="name6" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="6" FontSize="45" Width="50"></Label>
+                    <Label Name="name6" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year6" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward7">
-                    <Label Margin="-1100,0,0,0" Content="7" FontSize="45" Width="50"></Label>
-                    <Label Name="name7" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="7" FontSize="45" Width="50"></Label>
+                    <Label Name="name7" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year7" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward8">
-                    <Label Margin="-1100,0,0,0" Content="8" FontSize="45" Width="50"></Label>
-                    <Label Name="name8" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="8" FontSize="45" Width="50"></Label>
+                    <Label Name="name8" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year8" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward9">
-                    <Label Margin="-1100,0,0,0" Content="9" FontSize="45" Width="50"></Label>
-                    <Label Name="name9" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="9" FontSize="45" Width="50"></Label>
+                    <Label Name="name9" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year9" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
                 <StackPanel Height="100" Name="reward10">
-                    <Label Margin="-1100,0,0,0" Content="10" FontSize="45" Width="60"></Label>
-                    <Label Name="name10" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-300,-65,0,0"></Label>
-                    <Button Width="320" Height="80" Margin="800,-110,0,0" FontSize="30">Скачать изображение</Button>
+                    <Label Margin="-1300,0,0,0" Content="10" FontSize="45" Width="60"></Label>
+                    <Label Name="name10" Content="aa" FontSize="37" Width="650"  Height="100" Margin="-500,-65,0,0"></Label>
+                    <Label Name="year10" Margin="400,-100,0,0" Height="100" Width="150" FontSize="37" Content="2015"></Label>
+                    <Button Width="320" Height="80" Margin="1000,-110,0,0" FontSize="30">Скачать изображение</Button>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
-        <Label Content="" FontSize ="30" HorizontalAlignment="Left" Margin="67,-300,0,0" VerticalAlignment="Center"/>
+        
     </Grid>
 </Window>
