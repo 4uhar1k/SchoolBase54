@@ -103,6 +103,30 @@ namespace SchoolBase54
             {
                 MessageBox.Show("JlOX!");
             }
+            for (int i = 0; i < rewardimage.Count; i++)
+            {
+                byte[] data;
+                JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(rewardimage[i]));
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    encoder.Save(ms);
+                    data = ms.ToArray();
+                    MySqlCommand command1 = new MySqlCommand("INSERT INTO `rewards` (`name`, `year`, `iin`, `image`) VALUES (@uN, @uS, @uF, @uI)", db.getConnection());
+                    command1.Parameters.Add("@uN", MySqlDbType.VarChar).Value = rewardname[i];
+                    command1.Parameters.Add("@uS", MySqlDbType.VarChar).Value = rewardyear[i];
+                    command1.Parameters.Add("@uF", MySqlDbType.VarChar).Value = IINTextBox.Text;
+                    command1.Parameters.Add("@uI", MySqlDbType.Blob).Value = data;
+                    if (command1.ExecuteNonQuery() == 1)
+                    {
+
+                    }
+
+
+
+                }
+
+            }
             db.closeConnection();
         }
     }
