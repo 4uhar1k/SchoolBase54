@@ -9,6 +9,5 @@
     <Grid>
         <Button Height="70" Width="400" FontSize="21" Click="MainMenu" Margin="950,-600,0,0">Обратно в окно добавления ученика </Button>
         <Button Height="50" Width ="420" FontSize="35" Margin="57,732,0,0" Click="AddFamilyMember">Добавить родственника</Button>
-        <Label Content="Здесь будет выводиться уже созданные родственники данного ученика + отсюда идет переход в AddFamilyMember.xaml" FontSize ="23  " HorizontalAlignment="Left" Margin="72,391,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
